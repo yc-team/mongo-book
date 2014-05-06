@@ -5,7 +5,7 @@
 其实写这个 **全栈系列** 的初衷和我当年整理的 [js大脑图](http://zhangyaochun.iteye.com/blog/1682605) 比较一致,
 而且确实对于我个人而言，每个时间段还是希望要有一些整理性质的东西输出出来，分享给需要的人。
 
-这个系列题目和我自己目前在写的yc(*a fancy node develop platform*)一样，都很庞大，但是我还是会坚持写下去，希望感兴趣的同学多多关注。
+这个系列题目和我自己目前在写的 yc (*a fancy node develop platform*) 一样，都很庞大，但是我还是会坚持写下去，希望感兴趣的同学多多关注。
 
 同样的也希望：
 
@@ -25,8 +25,10 @@
 本教程编写者：
 
 > 小春 
-> ({ "from" : "wandoujia-fe" , "group" : "w3cplus" , "blog" : "http://zhangyaochun.iteye.com" })
 
+```shell
+({ "from" : "wandoujia-fe" , "group" : "w3cplus" , "blog" : "http://zhangyaochun.iteye.com" })
+```
 
 ## 正文
 
