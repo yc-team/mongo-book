@@ -25,10 +25,9 @@
 1. 这个键值对是有序的：
 
 ```shell
-{"name" : "yaochun" , "company" : "wandoujia"}
+{ "name" : "yaochun" , "company" : "wandoujia" }
 
-{"company" : "wandoujia" , "name" : "yaochun"}
-
+{ "company" : "wandoujia" , "name" : "yaochun" }
 ```
 
 所以以上两个文档是不一样的。
@@ -40,10 +39,9 @@
 4. 区分类型和大小写：
 
 ```shell
-{"name" : "yaochun" , "company" : "wandoujia" , "age" : 50}
+{ "name" : "yaochun" , "company" : "wandoujia" , "age" : 50 }
 
-{"company" : "wandoujia" , "name" : "yaochun" , "age" : "50"}
-
+{ "company" : "wandoujia" , "name" : "yaochun" , "age" : "50" }
 ```
 
 所以以上两个文档也是不一样的。
@@ -94,7 +92,6 @@
 
 ```shell
 { "freetime" : null }
-
 ```
 
 
@@ -102,7 +99,6 @@
 
 ```shell
 { "date" : new Date() }
-
 ```
 
 > 数组
@@ -111,7 +107,6 @@
 
 ```shell
 { "keywords" : [ "yaochun" , "wandoujia" , "w3cplus" ] }
-
 ```
 
 > 内嵌文档
@@ -120,7 +115,6 @@
 
 ```shell
 { "info" : {"yaochun" , "company" : "wandoujia" , "group" : "w3cplus" } }
-
 ```
 
 其实就是文档包含某个文档
@@ -132,7 +126,6 @@
 
 ```shell
 { "name" :  /yaochun/i }
-
 ```
 
 > 代码
@@ -141,7 +134,6 @@
 
 ```shell
 { "code" :  function() {/*..*/} }
-
 ```
 
 
@@ -161,7 +153,6 @@
 ```shell
 //welcome to join us: http://www.wandoujia.com/join
 db.wandoujia.fe.insert({ "name" : "yourname" })
-
 ```
 
 其实插入从上面的实例直观的看到：
@@ -192,7 +183,6 @@ MongoDB的插入操作默认会给文档加一个 *_id* 。
 
 ```shell
 db.book.mongodb.remove()
-
 ```
 
 这个代表我把book这个集合的子集合mongodb的所有文档都删除掉，但是子集合mongodb本身还在，索引也会保留。
@@ -203,7 +193,6 @@ db.book.mongodb.remove()
 
 ```shell
 db.book.mongodb.remove({ "part" : "primary" })
-
 ```
 
 这里给remove这个操作传递了一个文档，做查询和筛选用的。符合条件的文档才会被删除。
@@ -218,19 +207,15 @@ db.book.mongodb.remove({ "part" : "primary" })
 实例1：
 
 ```shell
-
 //welcome to join us: http://www.wandoujia.com/join
 db.wandoujia.jobs.find()
-
 ```
 
 实例2：
 
 ```shell
-
 //welcome to join us: http://www.wandoujia.com/join
 db.wandoujia.jobs.find({ "category", "fe" , "level" : 2 })
-
 ```
 
 从上面的实例中，我们看出，最基本的查询可以用**find**
