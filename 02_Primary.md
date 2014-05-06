@@ -15,6 +15,8 @@
 
 更多可以猛戳：[官方文档](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
 
+本文不做过多描述，只是提醒需要手动地创建一个数据目录，后面会介绍它的作用。
+
 
 ### 基础的概念
 
