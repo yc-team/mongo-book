@@ -24,7 +24,8 @@
 
 本教程编写者：
 
-> 小春 ({ "from" : "wandoujia-fe" , "group" : "w3cplus" , "blog" : "http://zhangyaochun.iteye.com" })
+> 小春 
+> ({ "from" : "wandoujia-fe" , "group" : "w3cplus" , "blog" : "http://zhangyaochun.iteye.com" })
 
 
 ## 正文
