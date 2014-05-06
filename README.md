@@ -1,4 +1,4 @@
 mongo-book
 ==========
 
-this is a starter book for mongo
+this is a starter book for MongoDB
