@@ -2,7 +2,7 @@
 
 ## 简介
 
-其实相比初级篇，中级篇里面我们一方面会比较深入地去看看类似查询的方式方法。
+其实相比 **初级篇** ，中级篇里面我们一方面会比较深入地去看看类似查询的方式方法。
 
 
 ### 多维度的查询
@@ -14,19 +14,15 @@
 实例1：
 
 ```shell
-
 //welcome to join us: http://www.wandoujia.com/join
 db.wandoujia.jobs.find()
-
 ```
 
 实例2：
 
 ```shell
-
 //welcome to join us: http://www.wandoujia.com/join
 db.wandoujia.jobs.find({"category", "fe" , "level" : 2})
-
 ```
 
 
@@ -35,17 +31,13 @@ db.wandoujia.jobs.find({"category", "fe" , "level" : 2})
 实例1 ：
 
 ```shell
-
 db.wandoujia.jobs.find({} , {"category" : 1, "base" : 1})
-
 ```
 
 实例2 ：
 
 ```shell
-
 db.wandoujia.jobs.find({} , {"level" : 0})
-
 ```
 
 上面这段其实我们看到：
@@ -84,10 +76,8 @@ db.wandoujia.jobs.find({} , {"level" : 0})
 我们直接看一个实例：
 
 ```shell
-
 //比如我们找工作有的人只看2级到3级的
 db.wandoujia.jobs.find({"level" , {"$gte" : 2, "$lte" : 3})
-
 ```
 
 这里，我们给find传递了一个内嵌文档，内层的文档的key就是$gte和$lte
@@ -96,10 +86,8 @@ db.wandoujia.jobs.find({"level" , {"$gte" : 2, "$lte" : 3})
 实例2：
 
 ```shell
-
 //比如我们找工作有的人不看帝都的
 db.wandoujia.jobs.find({"base" , {"$ne" : "beijing"})
-
 ```
 
 这里，$ne就代表*不等于*
@@ -131,17 +119,13 @@ db.wandoujia.jobs.find({"base" , {"$ne" : "beijing"})
 1. 命令行
 
 ```shell
-
 ./mongod
-
 ```
 
 我这里并没有指定任何参数，其实可以从
 
 ```shell
-
 ./mongod -h
-
 ```
 
 控制台会打出一堆的帮助命令，还是很多的，我这边只是简单提几个：
@@ -170,11 +154,8 @@ db.wandoujia.jobs.find({"base" , {"$ne" : "beijing"})
 那配置文件的书写有没有什么要求呢？
 
 ```shell
-
 # config by yaochun 2013-08-07 pm 07:10
-
 logpath = mongodb.log 
-
 ```
 
 * 一般都是#开头的注释
@@ -206,9 +187,7 @@ logpath = mongodb.log
 看图上，我们在命令行输入了以下命令：
 
 ```shell
-
 ./mongo
-
 ```
 
 它就是MongoDB shell，也是一个js shell，可以完成与MongoDB实例的交互
@@ -216,10 +195,9 @@ logpath = mongodb.log
 注释：其实如果你只是想体验js shell的化，可以输入：
 
 ```shell
-
 ./mongo --nodb
-
 ```
+
 这样的化，就不会连接数据库。
 
 
@@ -232,9 +210,7 @@ logpath = mongodb.log
 当然如果你希望有帮助文档来看看里面到底有什么命令，可以输入：
 
 ```shell
-
 help
-
 ```
 
 如图：![help](figures/8.png)
@@ -264,10 +240,8 @@ help
 * shell执行插入
 
 ```shell
-
 use wandoujia
 db.fe.insert({ "name" : "yourname" })
-
 ```
 
 这样wandoujia这个数据库的fe集合里面就多了一个文档
@@ -275,9 +249,7 @@ db.fe.insert({ "name" : "yourname" })
 * shell执行查询
 
 ```shell
-
 db.fe.find()
-
 ```
 
 会返回包含刚才插入的那个文档的集合。
@@ -285,9 +257,7 @@ db.fe.find()
 * shell执行更新
 
 ```shell
-
 db.fe.update( { "name" : "yourname" }, { "name" : "yourname", "recommender" : "yaochun" })
-
 ```
 
 update至少接受两个参数，第一个是限定条件对应的文档，第二个是新的文档。
@@ -298,9 +268,7 @@ update至少接受两个参数，第一个是限定条件对应的文档，第�
 * shell执行删除
 
 ```shell
-
 db.fe.remove({ "recommender" : "yaochun" })
-
 ```
 
 
@@ -320,17 +288,13 @@ db.fe.remove({ "recommender" : "yaochun" })
 
 
 ```shell
-
 //比如现在wandoujia一共的员工数目
 db.wandoujia.staff.count()
-
 ```
 
 那比如我就像知道fe-team里面的人员个数呢？
 
 ```shell
-
 //比如现在wandoujia一共的员工数目
 db.wandoujia.staff.count({ "category" : "fe" })
-
 ```
