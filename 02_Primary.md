@@ -13,6 +13,8 @@
 
 > 本文只介绍mac上的安装
 
+更多可以猛戳：[官方文档](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
+
 
 ### 基础的概念
 
