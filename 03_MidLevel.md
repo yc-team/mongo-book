@@ -203,7 +203,9 @@ logpath = mongodb.log
 
 它默认会自动连接到服务器的test数据库，并把这个数据库连接赋值给全局的db变量
 
-如图：![db](figures/7.png)
+如图：
+
+![db](figures/7.png)
 
 
 
@@ -213,7 +215,9 @@ logpath = mongodb.log
 help
 ```
 
-如图：![help](figures/8.png)
+如图：
+
+![help](figures/8.png)
 
 
 一般常用的：
@@ -221,7 +225,10 @@ help
 * show dbs
 
 返回当前所有的数据库名称
-如图：![show dbs](figures/9.png)
+
+如图：
+
+![show dbs](figures/9.png)
 
 * show collections
 
@@ -231,7 +238,9 @@ help
 
 比如我现在默认进去在test这个数据库，我现在要切换到wandoujia这个数据库
 
-如图：![use dbname](figures/10.png)
+如图：
+
+![use dbname](figures/10.png)
 
 * db.fe 
 
