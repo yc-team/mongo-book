@@ -27,7 +27,11 @@
 > 小春 
 
 ```shell
-({ "from" : "wandoujia-fe" , "group" : "w3cplus" , "blog" : "http://zhangyaochun.iteye.com" })
+{ 
+  "from" : "wandoujia-fe" ,
+  "group" : "w3cplus" ,
+  "blog" : "http://zhangyaochun.iteye.com" 
+}
 ```
 
 ## 正文
